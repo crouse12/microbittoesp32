@@ -1,4 +1,4 @@
-//% weight=0 color=#30f301 icon="\uf0ad" block="Microbitesp32"
+//% weight=0 color=#30f341 icon="\uf0ad" block="Microbitesp32"
 namespace microbitesp32 {
       export enum analogpin {
         A0 = 0
