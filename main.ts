@@ -214,7 +214,7 @@ namespace microbitesp32 {
         basic.pause(500)
         let a=serial.readString()
         basic.pause(500)
-        return parseFloat(a)
+        return parseInt(a)
 
     }     
       
