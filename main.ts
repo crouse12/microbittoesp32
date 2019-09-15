@@ -61,7 +61,7 @@ namespace microbitesp32 {
         basic.pause(1000)
     }
     //% group="1.Setup"
-    //% blockId=setWiFi block="Set Nodemcu | SSID %SSID| Pass %PASS| Mode %mode1 "
+    //% blockId=setWiFi block="Set ESP32 | SSID %SSID| Pass %PASS| Mode %mode1 "
     //% weight=101
     //% blockExternalInputs = 1
     export function setWiFi(SSID: string, PASS: string, mode1: mode) {
@@ -83,27 +83,27 @@ namespace microbitesp32 {
             iii=iii+1
         }
     }
-    //% group="2.Nodemcu_Control"  
-    //% blockId=setpinmode1 block="Set nodemcu digital pin %pin | for %XY"
+    //% group="2.ESP32_Control"  
+    //% blockId=setpinmode1 block="Set ESP32 digital pin %pin | for %XY"
     //% weight=101
     export function setpinmode1(pin: digitalpin, XY: type):void {
        serial.writeLine("pinMode="+pin.toString()+","+XY.toString()+"\\n")    
     }
      
-    //% group="2.Nodemcu_Control" 
-    //% blockId=setdigital1 block="Set nodemcu digital pin  %pin | value to %XY"
+    //% group="2.ESP32_Control" 
+    //% blockId=setdigital1 block="Set ESP32 digital pin  %pin | value to %XY"
     //% weight=101
     export function setdigital1(pin: digitalpin, XY: value):void {
         serial.writeLine("digitalWrite="+pin.toString()+","+XY.toString()+"\\n")    
     }
-    //% group="2.Nodemcu_Control"     
-    //% blockId=setdigital2 block="Set nodemcu digital pin  %pin | PWM value to %XY"
+    //% group="2.ESP32_Control"     
+    //% blockId=setdigital2 block="Set ESP32 digital pin  %pin | PWM value to %XY"
     //% weight=101
     export function setdigital2(pin: digitalpin, XY: number):void {
         serial.writeLine("analogWrite="+pin.toString()+","+XY.toString()+"\\n")    
     }
-    //% group="2.Nodemcu_Control" 
-    //% blockId=setdigital3 block="Read nodemcu digital pin  %pin value"
+    //% group="2.ESP32_Control" 
+    //% blockId=setdigital3 block="Read ESP32 digital pin  %pin value"
     //% weight=101
     export function setdigital3(pin: digitalpin):number {
         serial.writeLine("digitalRead="+pin.toString()+"\\n")
@@ -111,8 +111,8 @@ namespace microbitesp32 {
         let a=serial.readString()
         return parseFloat(a);
     }
-    //% group="2.Nodemcu_Control"
-    //% blockId=setdigital4 block="Read nodemcu analog pin  %pin value"
+    //% group="2.ESP32_Control"
+    //% blockId=setdigital4 block="Read ESP32 analog pin  %pin value"
     //% weight=101 
     export function setdigital4(pin: analogpin):number {
         serial.writeLine("analogRead="+pin.toString()+"\\n")
