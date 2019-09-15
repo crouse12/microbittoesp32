@@ -1,5 +1,5 @@
 {
-    "microbitesp32|block": "控制nodemcu",
+    "microbitesp32|block": "控制ESP32",
     "microbitesp32.setpinmode|block": "設定ESP32數位腳位 %pin|為 %XY",
     "microbitesp32.setdigital|block": "ESP32數位腳位 %pin|的值為 %XY",
     "microbitesp32.setpinmode1|block": "設定ESP32數位腳位 %pin|為 %XY",
