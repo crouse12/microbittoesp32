@@ -211,9 +211,9 @@ namespace microbitesp32 {
     export function thingspeak3(key:number, value1: value555): number {
         check()
         serial.writeLine("tt="+convertToText(key)+","+convertToText(value1)+",1"+"\\n")
-        basic.pause(100)
+        basic.pause(500)
         let a=serial.readString()
-        basic.pause(1500)
+        basic.pause(500)
         return parseFloat(a)
 
     }     
