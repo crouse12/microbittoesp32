@@ -1,6 +1,6 @@
-# MicrobitNodemcu
+# MicrobitESP32
 
-Micro:Bit控制Nodemcu積木
+Micro:Bit控制ESP32積木
 
 ## License
 
@@ -12,5 +12,5 @@ MIT
 (The metadata above is needed for package search.)
 
 ```package
-microbitnodemcu=github:crouse12/microbitnodemcu
+microbitesp32=github:crouse12/microbitesp32
 ```
