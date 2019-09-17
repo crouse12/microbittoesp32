@@ -125,10 +125,10 @@ namespace microbitesp32 {
         serial.writeLine("digitalWrite="+pin.toString()+","+XY.toString()+"\\n")    
     }
     //% group="2.ESP32_Control"     
-    //% blockId=setdigital2 block="Set ESP32 digital pin  %pin | PWM value to %XY"
+    //% blockId=setdigital2 block="Set ESP32 PWM pin  %pin | Channel %channel| value to %XY"
     //% weight=101
-    export function setdigital2(pin: digitalpin, XY: number):void {
-        serial.writeLine("analogWrite="+pin.toString()+","+XY.toString()+"\\n")    
+    export function setdigital2(pin: digitalpin, channel: number, XY: number):void {
+        serial.writeLine("analogWrite="+pin.toString()+","+channel.toString()+","+XY.toString()+"\\n")    
     }
     //% group="2.ESP32_Control" 
     //% blockId=setdigital3 block="Read ESP32 digital pin  %pin value"
