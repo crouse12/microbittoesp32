@@ -4,7 +4,7 @@
     "microbitesp32.setdigital|block": "ESP32數位腳位 %pin|的值為 %XY",
     "microbitesp32.setpinmode1|block": "設定ESP32數位腳位 %pin|為 %XY",
     "microbitesp32.setdigital1|block": "ESP32數位腳位 %pin|的值為 %XY",
-    "microbitesp32.setdigital2|block": "ESP32數位腳位 %pin|的PWM輸出值為 %XY",
+    "microbitesp32.setdigital2|block": "ESP32 PWM腳位 %pin | 頻道 %channel| 值為 %XY",
     "microbitesp32.setdigital3|block": "讀取ESP32數位腳位 %pin 的值",
     "microbitesp32.setdigital4|block": "讀取ESP32類比腳位 %pin 的值",
     "microbitesp32.thingspeak1|block": "設定thingspeak的key %key | 寫入Field1 %value1",
